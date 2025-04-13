@@ -1,0 +1,71 @@
+.Name {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+}
+.navigation{
+    text-align: center;
+    background-color: black;
+    padding: 0px 20px 0px 20px;
+}
+.navigation a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 0px;
+    transition: color 0.3s;
+}
+.navigation a:hover{
+    color: green;
+} 
+body{
+    padding: auto;
+    margin: auto;
+}
+ .access{
+    text-align: center;
+    text-decoration: solid;
+ }
+ #form{
+    border-style: solid;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 150px;
+    padding: 50px;
+    border-radius: 10px;
+    border-color: #F5F5F5;
+    background-color: #F5F5F5;
+}
+body{
+    text-align: center;
+    
+}
+.form1{
+    padding-bottom: 10px;
+}
+.form2{
+    padding-bottom: 10px;
+}
+.form3{
+    font-weight: bold;
+}
+button{
+    background-color: #0eb5ad;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    border-color: #0eb5ad;
+    border-radius: 10px
+}
+.form5{
+    padding-bottom: 10px;
+}
+.form4{
+    padding-bottom: 10px;
+}

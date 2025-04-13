@@ -1,0 +1,95 @@
+
+.Name {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+}
+.navigation{
+    text-align: center;
+    background-color: black;
+    padding: 0px 20px 0px 20px;
+}
+.navigation a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 0px;
+    transition: color 0.3s;
+}
+.navigation a:hover{
+    color: green;
+}   
+.about{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.mission{
+    text-align: center;
+    background-color: #F5F5F5;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.Vision{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.join{
+    text-align: center;
+    background-color: #F5F5F5;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.end{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin:auto
+}
+.reg{
+    border-style: solid;
+    display:inline-block;
+    background-color: #0ed5ad;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #0ed5ad;
+    margin-bottom: 20px;
+}
+.reg a{
+    text-decoration:none ;
+    font-style: bold;
+    color: white;
+}
+.end {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+main {
+    flex: 1 0 auto;
+}
+
+
+.end {
+    flex-shrink: 0; 
+}

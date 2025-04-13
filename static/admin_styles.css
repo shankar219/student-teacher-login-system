@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #00cc00;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.profile {
+    display: none;
+}
+
+.profile p {
+    margin: 10px 0;
+}
+
+.profile input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.dashboard {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.dashboard h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.semesters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.semester, .course, .unit {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.semester:hover, .course:hover, .unit:hover {
+    transform: translateY(-5px);
+}
+
+.courses, .units, .pdfs, .manage-pdfs {
+    display: none;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.course {
+    background-color: #0056b3;
+}
+
+.unit {
+    background-color: #003d80;
+}
+
+.pdfs a {
+    color: #cce5ff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.manage-pdfs input[type="file"] {
+    margin: 10px 0;
+}
+
+.manage-pdfs label {
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.btn-modify {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-modify:hover {
+    background-color: #e0a800;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1a1a1a;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.upload-message {
+    margin-left: 10px;
+    font-size: 14px;
+}
