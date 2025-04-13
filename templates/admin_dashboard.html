@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - ERP</title>
+    <link rel="stylesheet" href="/static/admin_styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Amrita Vishwa Vidyapeetham - B.Tech CSE 2019</h1>
+        <p>Your Gateway to Knowledge and Learning Resources</p>
+    </div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Logout</a>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Profile</h3>
+            <div class="profile">
+                <p><strong>Name:</strong> Admin User</p>
+                <input type="text" value="Admin User" id="admin-name">
+                <p><strong>Email:</strong> admin@amrita.edu</p>
+                <p><strong>Role:</strong> Admin</p>
+                <input type="password" placeholder="New Password" id="admin-password">
+                <button class="btn" onclick="updateProfile('admin')">Update Profile</button>
+            </div>
+        </div>
+        <div class="dashboard">
+            <h2>Admin Dashboard</h2>
+            <p>Welcome, Admin User! Manage resources below.</p>
+            <div class="semesters">
+                <!-- Semester 1 -->
+                <div class="semester">
+                    Semester 1
+                    <div class="courses">
+                        <div class="course">
+                            19ENG111 Technical Communication
+                            <div class="units">
+                                <div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course">19MAT101 Single Variable Calculus<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19MAT111 Multivariable Calculus<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19MAT102 Matrix Algebra<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE100 Problem Solving and Algorithmic Thinking<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19MEE100 Engineering Graphics - CAD<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE101 Computer Systems Essentials<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE180 Computer Hardware Essentials<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CUL101 Cultural Education - I<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                    </div>
+                </div>
+                <!-- Semester 2 -->
+                <div class="semester">
+                    Semester 2
+                    <div class="courses">
+                        <div class="course">19MAT115 Discrete Mathematics<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19MAT112 Linear Algebra<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19PHY101 Engineering Physics - A<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE102 Computer Programming<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19EEE111 Electrical and Electronics Engineering<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19EEE182 Electrical and Electronics Engineering Practice<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE103 User Interface Design<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE111 Fundamentals of Data Structures<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19MEE181 Manufacturing Practice<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CUL111 Cultural Education - II<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                    </div>
+                </div>
+                <!-- Semester 3 -->
+                <div class="semester">
+                    Semester 3
+                    <div class="courses">
+                        <div class="course">19MAT201 Numerical Methods<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19MAT202 Optimization Techniques<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19ECE204 Digital Electronics and Systems<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE201 Advanced Programming<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE205 Program Reasoning<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE202 Database Management System<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE204 Object Oriented Paradigm<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19ECE282 Digital Electronics and Systems Lab<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19AVP201 Amrita Values Program I<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                    </div>
+                </div>
+                <!-- Semester 4 -->
+                <div class="semester">
+                    Semester 4
+                    <div class="courses">
+                        <div class="course">19MAT205 Probability and Random Processes<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE212 Data Structures and Algorithms<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE214 Theory of Computation<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE211 Computer Organization and Architecture<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE213 Operating Systems<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19AVP211 Amrita Values Program II<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">Free Elective I<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19SSK211 Soft Skills I<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19MNG300 Disaster Management<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                    </div>
+                </div>
+                <!-- Semester 5 -->
+                <div class="semester">
+                    Semester 5
+                    <div class="courses">
+                        <div class="course">19CSE305 Machine Learning<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE302 Design and Analysis of Algorithms<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE301 Computer Networks<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE304 Foundations of Data Science<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE303 Embedded Systems<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">Professional Elective I<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19SSK301 Soft Skills II<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19LIV390 Live-in-Labs<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19ENV300 Environmental Science<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                    </div>
+                </div>
+                <!-- Semester 6 -->
+                <div class="semester">
+                    Semester 6
+                    <div class="courses">
+                        <div class="course">19CSE314 Software Engineering<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE313 Principles of Programming Languages<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE312 Distributed Systems<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE311 Computer Security<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">Professional Elective II<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">Professional Elective III<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19SSK311 Soft Skills III<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19LIV490 Live-in-Labs<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                    </div>
+                </div>
+                <!-- Semester 7 -->
+                <div class="semester">
+                    Semester 7
+                    <div class="courses">
+                        <div class="course">19CSE401 Compiler Design<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">Professional Elective IV<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">Professional Elective V<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">Professional Elective VI<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">Free Elective II<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19CSE495/19CSE491 Project - Phase - 1 / Seminar<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                        <div class="course">19LAW300 Indian Constitution<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                    </div>
+                </div>
+                <!-- Semester 8 -->
+                <div class="semester">
+                    Semester 8
+                    <div class="courses">
+                        <div class="course">19CSE499 Project - Phase - 2<div class="units"><div class="unit">
+                                    Unit 1
+                                    <div class="pdfs"><a href="#" data-pdf="Unit1.pdf">Unit1.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 1">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 2
+                                    <div class="pdfs"><a href="#" data-pdf="Unit2.pdf">Unit2.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 2">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="unit">
+                                    Unit 3
+                                    <div class="pdfs"><a href="#" data-pdf="Unit3.pdf">Unit3.pdf</a></div>
+                                    <div class="manage-pdfs">
+                                        <label>Add/Update PDF:</label>
+                                        <input type="file" accept=".pdf" data-unit="Unit 3">
+                                        <button class="btn" onclick="addPDF(this)">Add</button>
+                                        <button class="btn btn-modify" onclick="modifyPDF(this)">Modify</button>
+                                        <button class="btn btn-delete" onclick="deletePDF(this)">Delete</button>
+                                    </div>
+                                </div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Educational Resource Portal</p>
+    </footer>
+    <script src="/static/admin_scripts.js"></script>
+</body>
+</html>

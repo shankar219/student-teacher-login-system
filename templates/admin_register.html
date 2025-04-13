@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            EDUCATIONAL RESOURCE PORTAL
+        </title>
+    </head>
+    <body>
+        <div class="Name">
+        <h1>Educational Resource Portal</h1>
+        <h3>Your Gateway to Knowledge and Learning Resources</h3>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="/">HOME</a>
+                <a href="/about.html">ABOUT</a>
+                <a href="/contract.html">CONTRACT</a>
+                <a href="/login.html">LOGIN/REGISTER</a>
+            </nav>
+        </div>
+    <div class="access">
+        <h2>REGISTER A NEW ACCOUNT</h2>
+    </div>
+    <div id="form">
+        <h3>Register As Admin</h3>
+        <form action="/admin_register" id="registerForm" method="post"> 
+            <div class="form1">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="username"><br>
+            </div>
+            <div class="form5">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="ENTER YOUR MAIL ID">
+            </div>
+            <div class="form2">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="PASSWORD"><br>
+            </div>
+            <div class="form4">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="PASSWORD"><br>
+            </div>
+            <div class="form3">
+                <button type="submit">Register</button><br>
+                <p>Already have an account? <a href="login.html">Click here</a></p>
+                <p>Register as user<a href="register.html">Click here</a></p>
+            </div>
+        </form>
+    </div>
+    </div>
+    <link rel="stylesheet" href="/static/login.css">
+    <script src="/static/admin_register.js"></script>
+    </body>
+</html>
