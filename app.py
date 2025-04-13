@@ -25,11 +25,11 @@ def allowed_file(filename):
 def get_db_connection():
     try:
         conn = mysql.connector.connect(
-            host="localhost",
-            port=3306,
-            user="root",
-            password="root1234",
-            database="project_db"
+            host="t",
+            port=,
+            user="",
+            password="",
+            database=""
         )
         return conn
     except mysql.connector.Error as err:
